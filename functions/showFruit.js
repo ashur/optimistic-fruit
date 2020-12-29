@@ -38,6 +38,7 @@ function renderPage({ title, description })
 
 module.exports.handler = async (event) =>
 {
+	console.log( event.queryStringParameters );
 	let response = {
 		body: "",
 	};
