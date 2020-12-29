@@ -5,4 +5,5 @@
 [[redirects]]
   from = "/fruit/*"
   to = "/.netlify/functions/showFruit?slug=:splat"
+  force = true
   status = 200
