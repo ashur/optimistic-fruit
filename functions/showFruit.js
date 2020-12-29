@@ -43,7 +43,7 @@ module.exports.handler = async (event) =>
 
 	if( event.httpMethod === "GET" )
 	{
-		console.log( event.queryStringParameters );
+		console.dir( event, { depth: 4 } );
 
 		let slug = event.queryStringParameters.slug;
 		if( slug )
