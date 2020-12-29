@@ -43,8 +43,6 @@ module.exports.handler = async (event) =>
 
 	if( event.httpMethod === "GET" )
 	{
-		console.dir( event, { depth: 4 } );
-
 		let slug = event.queryStringParameters.slug
 			? event.queryStringParameters.slug
 			: event.path.split( "/" )[2];
