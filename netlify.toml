@@ -4,5 +4,5 @@
 
 [[redirects]]
   from = "/fruit/:fruit"
-  to = "/.netlify/functions/showFruit?slug=:fruit"
+  to = "/.netlify/functions/showFruit?slug=:fruit&foo=bar"
   status = 200
