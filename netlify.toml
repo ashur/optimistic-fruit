@@ -3,7 +3,6 @@
   publish = "dist/"
 
 [[redirects]]
-  from = "/fruit/*"
-  to = "/.netlify/functions/showFruit?slug=:splat"
-  force = true
+  from = "/fruit/:fruit"
+  to = "/.netlify/functions/showFruit?slug=:fruit"
   status = 200

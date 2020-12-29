@@ -48,9 +48,6 @@ module.exports.handler = async (event) =>
 		let slug = event.queryStringParameters.slug;
 		if( slug )
 		{
-			// Strip trailing slashes appended by redirect
-			slug = slug.replace( "/", "" );
-
 			let fruit = fruits.find( fruit => fruit.slug === slug );
 			if( fruit )
 			{
