@@ -28,6 +28,7 @@ function renderPage({ title, description })
 	</main>
 
 	<footer>
+		<hr />
 		<p>This file served dynamically 🤹‍♀️</p>
 	</footer>
 </body>
