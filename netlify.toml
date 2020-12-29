@@ -1,0 +1,8 @@
+[build]
+  functions = "functions/"
+  publish = "dist/"
+
+[[redirects]]
+  from = "/fruit/*"
+  to = "/.netlify/functions/showFruit?slug=:splat"
+  status = 302
