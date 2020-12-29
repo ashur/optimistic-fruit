@@ -45,7 +45,10 @@ module.exports.handler = async (event) =>
 	{
 		console.dir( event, { depth: 4 } );
 
-		let slug = event.queryStringParameters.slug;
+		let slug = event.queryStringParameters.slug
+			? event.queryStringParameters.slug
+			: event.path.split( "/" )[2];
+
 		if( slug )
 		{
 			let fruit = fruits.find( fruit => fruit.slug === slug );
